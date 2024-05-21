@@ -7,8 +7,6 @@ import { useContext, useState } from "react";
 import DepositWifPopUp from "./DepostiWifPopUp";
 import MainGame from "./MainGame";
 import kook from "../assets/cook.png";
-import * as SolanaWeb3 from "@solana/web3.js";
-import * as splToken from "@solana/spl-token";
 import { transfer } from "../helpers/tokenTransfer";
 export default function CharacterSelection() {
   const wallet = useWallet();
