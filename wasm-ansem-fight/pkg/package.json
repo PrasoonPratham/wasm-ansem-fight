@@ -4,11 +4,13 @@
   "files": [
     "ansem_wasm_bg.wasm",
     "ansem_wasm.js",
+    "ansem_wasm_bg.js",
     "ansem_wasm.d.ts"
   ],
   "module": "ansem_wasm.js",
   "types": "ansem_wasm.d.ts",
   "sideEffects": [
+    "./ansem_wasm.js",
     "./snippets/*"
   ]
 }

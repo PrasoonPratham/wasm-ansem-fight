@@ -169,7 +169,7 @@ impl <'a>Game<'a> {
     }
     pub fn set_frame(&self, path: &str) {
         self.image_ref
-            .set_src(&format!("{}/{}", "/src/assets", path));
+            .set_src(&format!("{}/{}", "/assets", path));
     }
     pub fn flip_frame(&self, bool: bool) {
         let s = self.image_ref.style();

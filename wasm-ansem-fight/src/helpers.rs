@@ -31,7 +31,7 @@ pub fn generate_punches(min: &usize, max: &usize) -> usize {
 
 pub async fn play_sound(path: &str) {
     let audio_element = log!(HtmlAudioElement::new());
-    let n_p = format!("{}/{}", "/src/assets", path);
+    let n_p = format!("{}/{}", "/assets", path);
     audio_element.set_src(&n_p);
     let play_promise = JsFuture::from(log!(audio_element.play()));
     let _ = play_promise.await;
