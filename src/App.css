@@ -1,0 +1,106 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.image-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: flex-start; /* Align to top */
+  /* Adjust gap as needed */
+}
+
+.image {
+  width: 46.875rem; /* Adjust image width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.custom-heading {
+  font-family: "8bit", sans-serif;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@font-face {
+  font-family: "8bit";
+  src: url("./assets/8-bit.ttf") format("truetype");
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 16px;
+  margin-bottom: 48px;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+@keyframes dot-blink {
+  0%,
+  25%,
+  75%,
+  100% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: visible;
+  }
+}
+
+.dot {
+  display: inline-block;
+  margin-left: 0px;
+  animation: dot-blink 1s infinite;
+}
+
+.dot:nth-child(2) {
+  animation-delay: 0.33s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.66s;
+}
+/* Define the animation keyframes */
+@keyframes popup {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animation to the error message */
+.animate-popup {
+  animation: popup 1s ease forwards;
+}
